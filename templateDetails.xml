@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>Юг-Авто</name>
+	<version>1.0</version>
+	<creationDate>5/19/2013</creationDate>
+	<author>Alexey Andreev</author>
+	<authorEmail>redlolik@gmail.com</authorEmail>
+	<copyright>Copyright (C) 2013 All rights reserved.</copyright>
+	<description>TPL_PROTOSTAR_XML_DESCRIPTION</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>menu-top</position>
+		<position>menu-bottom</position>
+		<position>slider</position>
+		<position>promo</position>
+		<position>seo</position>
+	</positions>
+</extension>

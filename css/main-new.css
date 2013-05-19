@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*
+File Name   : main-new.css
+Author      : Bang Daejong
+*/
+
+* {margin:0;padding:0;}
+img {border:0;}
+ul {list-style:none;}
+
+html {}
+
+.liveoperator {
+	position: fixed;
+	height: 100%;
+}
+	.liveoperator  img{
+		top: 30%;
+		position: relative;
+		z-index: 999;
+	}
+
+.wrap {width:100%;margin:0 auto;}
+
+#section-header {
+	font-size: 13px;
+	line-height: 13px;
+/*	position: absolute;
+	left: 0;
+	top: 0;*/
+	z-index: 30;
+	width: 100%;
+	height: 191px;
+	background: url("../images/head-bg.png") repeat-x left top;
+}
+#section-header #nav-GNB {
+	float: right;
+}
+#section-header .wrap-header {width:960px;margin:0 auto;}
+
+#section-header .ya-logo {
+	margin: 15px 0px 0px 0px;
+	float: left;
+	margin-right: 10px;
+/*	margin-left: 25px;
+	position: relative;
+	z-index: 50;
+	font-size: 0;
+	line-height: 0;
+	display: inline;*/
+}
+
+.wrap-visual-footer {}
+
+.visualImg_box {
+	position: relative;
+	overflow: hidden;
+/*	z-index: 10;*/
+}
+	.vacancies .visualImg_box, .events .visualImg_box, .events-archive .visualImg_box {
+		overflow: visible;
+	}
+
+#noFlash-txt {position:absolute;left:40px;bottom:15px;z-index:5;font-size:11px;color:#333;}
+.slider {
+	height: 450px;
+	background-color: #f2f2f2;
+}
+.events .slider, .events-archive .slider {
+	height: 359px;
+}
+	.slider .slide {
+		width: 100%;
+		position: absolute;
+	}
+.visualImg {
+	height: 450px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#visualList {position:absolute;left:41px;bottom:45px;font-size:0;line-height:0;}
+#visualList li {margin-top:3px;border:1px solid #fff; height:30px; overflow: hidden;}
+#visualList li img {width:68px;height:43px; margin:-7px 0 0;}
+#menuDock {position:absolute;right:32px;bottom:25px;}
+#menuDock li {float:left;width:80px;margin-left:20px;text-align:center;}
+#menuDock li.first {margin-left:0;}
+#menuDock p {font-size:10px;color:#ccc;}
+
+#side-banner p#prev, #side-banner p#next,
+#side-banner ul, #side-banner li {
+	float: left;
+}
+#side-banner p {
+	padding-top: 10px;
+	font-size: 13px;
+}
+
+#side-banner li div.teaser_flash {
+	position: relative;
+	z-index: 10;
+}
+#side-banner li div.teaser_href {
+	position: relative;
+	margin: -70px 0px 0px 0px;
+	z-index: 100;
+}
+	#side-banner li div.teaser_href img {
+		width: 192px;
+		height: 70px;
+	}
+
+#article-Visual-flash {display:none;position:absolute;left:0;top:0;z-index:10;width:100%;}
+
+#wrap-flash {min-width:960px;}
+
+.wrap-menudock {position:relative;width:960px;margin:0 auto;}
+.wrap-menudock #facebook {display:none;position:absolute;left:314px;top:-565px;}
+
+
+#article-footer ul {float:right;padding-left:1px;}
+#article-footer li {padding:0 5px;background:url('/i/template/css/line-footer-gray.gif') no-repeat left 10%;}
+#article-footer li a {padding-top:2px;color:#919699;text-decoration:none;}
+#article-footer li a:hover {color:#85898c;text-decoration:underline;}
+#article-footer li#rss,
+#article-footer li#bookmark,
+#article-footer li#addTo,
+#article-footer li#ft-korean {padding:0;margin-top:-1px;background:none;font-size:0;line-height:0;}
+#article-footer li.first {padding-right:5px;background:none;}
+#article-footer li#rss {margin-left:25px;}
+#article-footer li#bookmark {margin-left:13px;}
+#article-footer li#addTo {margin-left:10px;}
+#article-footer li#ft-korean {margin-left:10px;}
+
+
+.clr, .clearFloat {
+	/**zoom: 1;*/
+	clear: both;
+}
+/*.clearFloat:after {content:'';display:block;clear:both;height:0;visibility:hidden;}	Отключаю!	*/
+
+.fl-L {float:left;}
+.fl-R {float:right;}
+
+
+.counter {
+	position: relative;
+    top: 148px;
+	left: 763px;
+	width: 168px;
+}
