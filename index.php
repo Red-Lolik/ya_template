@@ -1,6 +1,20 @@
+<?php
+$doc = JFactory::getDocument();
+$doc->_generator = null;
+$doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/common.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/nav-gnb.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/2012.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/main-new.css');
+
+$doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
+
+//var_dump($doc);
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <jdoc:include type="head" />
 	<meta http-equiv="content-type" content="text/html; charset=utf8" />
 	
 		<title>Группа компаний Юг-Авто – новые автомобили в Краснодаре, покупка/продажа, автосалоны. |  Компания Юг-Авто</title>
@@ -8,15 +22,7 @@
 	<meta name='keywords' content=""/>
 	<meta name='description' content=""/>
 	
-
-
 <link type="text/css" rel="stylesheet" href="/inc/datepicker.css" />
-<link type="text/css" rel="stylesheet" href="templates/ya/css/nav-gnb.css" />
-<link type="text/css" rel="stylesheet" href="templates/ya/css/2012.css" />
-<link rel="stylesheet" type="text/css" href="templates/ya/css/main-new.css">
-
-
-<script type="text/javascript" language="Javascript" src="http://yandex.st/jquery/1.8.0/jquery.min.js"></script>
 
 <script type="text/javascript" language="Javascript" src="http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js"></script>
 <link type="text/css" rel="stylesheet" href="http://yug-avto.ru/js/fancybox/jquery.fancybox-1.3.4.css" />
