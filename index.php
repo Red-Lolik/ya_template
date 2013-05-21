@@ -28,12 +28,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 <link type="text/css" rel="stylesheet" href="/inc/css/sunny/jquery-ui-1.9.1.custom.css" />
 
-
-
 </head>
 <body class="start">
 
-<!-- Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter 
 <script type="text/javascript">
 var yaParams = {/*Здесь параметры визита*/};
 </script>
@@ -64,7 +62,7 @@ var yaParams = {/*Здесь параметры визита*/};
 })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/6251896" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+ /Yandex.Metrika counter -->
 
 <div id="co_header">
 	<div id="GNBLayer-new">
