@@ -1,13 +1,16 @@
 <?php
 $doc = JFactory::getDocument();
-$doc->_generator = null;
+$doc->_generator = NULL;
 $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/common.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/nav-gnb.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/2012.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/main-new.css');
 
+$doc->_scripts = NULL;
 $doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
+$doc->addScript("http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js");
+$doc->addScript("templates/".$this->template."/js/js.js");
 
 //var_dump($doc);
 ?>
@@ -16,9 +19,6 @@ $doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
 <head>
     <jdoc:include type="head" />
 	<meta http-equiv="content-type" content="text/html; charset=utf8" />
-	
-		<title>Группа компаний Юг-Авто – новые автомобили в Краснодаре, покупка/продажа, автосалоны. |  Компания Юг-Авто</title>
-	
 	<meta name='keywords' content=""/>
 	<meta name='description' content=""/>
 	
@@ -26,16 +26,13 @@ $doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
 
 <script type="text/javascript" language="Javascript" src="http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js"></script>
 <link type="text/css" rel="stylesheet" href="http://yug-avto.ru/js/fancybox/jquery.fancybox-1.3.4.css" />
-<script type="text/javascript" src="http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js"></script>
-<script type="text/javascript" language="Javascript" src="/inc/js/slider.js"></script>
-<script type="text/javascript" language="Javascript" src="/inc/js/js.js"></script>
 <script type="text/javascript" language="Javascript" src="/js/jquery.lazyload.min.js"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 <link type="text/css" rel="stylesheet" href="/inc/css/sunny/jquery-ui-1.9.1.custom.css" />
 
 </head>
-<body class="start">
+<body>
 
 <!-- Yandex.Metrika counter 
 <script type="text/javascript">
@@ -101,8 +98,8 @@ var yaParams = {/*Здесь параметры визита*/};
 	</div><!--// GNB (General Navigation Block)-->
 
 </div>
-<div class='slider'>
-	<jdoc:include type="modules" name="slider" style="xhtml" /> 
+<div class="slider">
+	<jdoc:include type="modules" name="slider" style="none" /> 
 </div>
 <div id="section-visual" class="start ">
 
