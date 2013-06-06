@@ -6,6 +6,90 @@
         Purpose of the stylesheet follows.
 */
 
+/*MENU-TOP START*/
+#nav-GNB {
+	padding-top: 57px;
+}
+#nav-GNB li.gnb {
+	float: left;
+	position: relative;
+}
+#nav-GNB a.gnb {
+	display: inline-block;
+	position: relative;
+	z-index: 300;
+	height: 33px;
+	margin: 0px 20px 0px 19px;
+	font-weight: bold;
+	font-family: 'Arial';
+	color: #043476;
+	overflow: hidden;
+}
+	a.gnb div {
+		height: 33px;
+		float: left;
+		line-height: 37px;
+		text-decoration: underline;
+	}
+
+#nav-GNB a.on {
+	margin: 0px -2px 0px -2px;
+	color: #000000;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-box-shadow: 0 4px 0 0 #FFFFFF, 0 0 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 4px 0 0 #FFFFFF, 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 0 0 #FFFFFF, 0 0 4px rgba(0, 0, 0, 0.2);
+}
+	
+	a.on div.top-menu-btn-left {
+		background: url('../images/top-menu-btn-left.png') no-repeat scroll 0px 0px #ffffff;
+		width: 21px;
+	}
+	a.on div.top-menu-btn-middle {
+		background: url('../images/top-menu-btn-middle.png') repeat-x scroll 0px 0px #ffffff;
+		text-decoration: none;
+	}
+	a.on div.top-menu-btn-right {
+		background: url('../images/top-menu-btn-right.png') no-repeat scroll 0px 0px #ffffff;
+		width: 22px;
+	}
+
+#nav-GNB .snb {
+	display: none;
+	z-index: 200;
+	position: absolute;
+	margin: 0px 0px 0px -2px;
+	top: 34px;
+	/*left: -9px;
+	width: 230px;*/
+	font-size: 11px;
+	line-height: 16px;
+	background-color: #FFFFFF;
+	border-color: #000000;
+	border-radius: 0px 5px 5px 5px;
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+}
+	#nav-GNB .snb ul {
+		width: 155px;
+		margin: -2px 0px 0px 0px;
+		padding: 12px 40px 0px 0px;
+	}
+		#nav-GNB .snb li {
+			width: 150px;
+			padding: 0px 0px 15px 15px;
+			font-size: 13px;
+		}
+#nav-GNB .snb a {
+	display: inline-block;
+	width: 100%;
+	color: #043476;
+	text-decoration: underline;
+}
+#nav-GNB .snb a:hover {color:#0f5699;}
+/*MENU-TOP END*/
+
 .wrap-header .brands {
 	padding: 130px 0px 0px 0px;
 }
