@@ -3,7 +3,6 @@ $doc = JFactory::getDocument();
 $doc->_generator = NULL;
 $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/common.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/nav-gnb.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/2012.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/main-new.css');
 
@@ -76,7 +75,7 @@ var yaParams = {/*Здесь параметры визита*/};
 
 				
 				<div id="nav-GNB">
-					<jdoc:include type="modules" name="menu-top" style="xhtml" />
+					<jdoc:include type="modules" name="menu-top" style="none" />
 				</div>								
 				<div class="brands">
 					<a href="http://jaguar.yug-avto.ru" target="_blank"><div id="jaguar"></div></a>
