@@ -67,7 +67,7 @@ foreach ($list as $i => &$item) :
 	// Render the menu item.
 	switch ($item->type) :
 		case 'url':
-			echo '<a class="gnb" href="'.$item->alias.'">
+			echo '<a class="gnb" href="'.$item->link.'">
 					<div class="top-menu-btn-left"></div>
 					<div class="top-menu-btn-middle">'.$item->title.'</div>
 					<div class="top-menu-btn-right"></div>
@@ -93,7 +93,7 @@ foreach ($list as $i => &$item) :
 	elseif ($item->shallower)
 	{
 		echo '</li>';
-		echo str_repeat('</ul></li>', $item->level_diff);
+		echo str_repeat('</ul>', $item->level_diff);
 	}
 	// The next item is on the same level.
 	else {

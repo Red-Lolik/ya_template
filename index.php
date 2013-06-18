@@ -7,7 +7,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/2012.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/main-new.css');
 
 $doc->_scripts = NULL;
-$doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
+JHtmlJquery::framework(false);
+//$doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
 $doc->addScript("http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js");
 $doc->addScript("templates/".$this->template."/js/js.js");
 
