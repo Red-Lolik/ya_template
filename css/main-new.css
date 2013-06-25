@@ -62,8 +62,7 @@ html {}
 	}
 
 #noFlash-txt {position:absolute;left:40px;bottom:15px;z-index:5;font-size:11px;color:#333;}
-.slider {
-	height: 450px;
+.events {
 	background-color: #f2f2f2;
 }
 .events .slider, .events-archive .slider {

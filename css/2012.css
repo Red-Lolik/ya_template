@@ -17,7 +17,12 @@ a {
 	margin: 0 auto;
 	display: block;
 }
-	#article-Visual h1, .start .slide #article-Visual h2, .offers .slide #article-Visual h2, .events h1, .events-archive h1 {
+	#article-Visual h1,
+	.start .slide #article-Visual h2,
+	.offers .slide #article-Visual h2,
+	.events h1,
+	.events-archive h1 {
+		line-height: 36px;
 		font-size: 30px;
 		font-weight: bold;
 		padding: 55px 0px 0px 0px;
@@ -83,7 +88,7 @@ a {
 		}
 .promo-shadow {
 	height: 6px;
-	background: url('/i/template/2012/promo-bg-shadow.png') repeat-x left top;
+	background: url('../images/promo-bg-shadow.png') repeat-x left top;
 }
 /* index promo-line END */
 
@@ -276,40 +281,46 @@ a {
 	font-size: 13px;
 }
 
-ul.cols-4, ul.cols-4 li {
-	float: left;
-}
-ul.cols-4 li a {
-	color: #000000;
-	text-decoration: none;
-}
+/*TODO Удалить для релиза мусор
+
 ul.cols-4 {
 	width: 960px;
 }
-	ul.cols-4 li:first-child {
-		margin: 0px 0px 0px 0px;
-	}
-	ul.cols-4 li {
-		width: 225px;
-		padding: 0px 0px 20px 0px;
-		margin: 0px 0px 0px 20px;
-		display: table;
-	}
-		ul.cols-4 li h2 {
-			height: 90px;
-			padding: 100px 0px 0px 0px;
-			font-size: 24px;
-			font-weight: normal;
-			line-height: 28px;
-		}
-		ul.cols-4 li p {
-			padding: 0px 0px 0px 0px; /* но можно поставить и меньше */
-			margin: 0px 0px 20px 0px;
-			height: 80px;
-		}
+*/
+
+.cols-4 .span3 {
+	float: left;
+}
+.cols-4 .span3 a {
+	color: #000000;
+	text-decoration: none;
+}
+.cols-4 .span3:first-child {
+	margin: 0px 0px 0px 0px;
+}
+.cols-4 .span3 {
+	width: 225px;
+	padding: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 20px;
+	display: table;
+}
+.cols-4 .span3 h2 {
+	height: 90px;
+	padding: 100px 0px 0px 0px;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 28px;
+}
+.cols-4 .span3 p {
+	padding: 0px 0px 0px 0px; /* но можно поставить и меньше */
+	margin: 0px 0px 20px 0px;
+	height: 80px;
+}
+
 input.rounded {
 	border: medium none;
 	cursor: pointer;
+	font-family: 'Arial','sans-serif';
 }
 a.rounded, input.rounded {
 	background: #fec24e; /* for non-css3 browsers */
@@ -663,16 +674,16 @@ a.rounded:active {
 #article-Visual li{
 	margin: 10px 0 0;
 }
-#article-Visual span.date {
-	font-style: italic;
-	color: #82787a;
+#article-Visual .date {
+	/*INFO Перенес в .events .slide .date (см.ниже) */
 }
 
 /* Events */
-.events .events-slider, .events .slide {
+.events .events-slider, .events .slide {/*TODO Проверить, возможно можно удалить*/
 	width: 960px;
 	height: 340px;
 }
+
 .events .slide img.big_img, .events-archive .slide img.big_img {
 	float:right;
 }

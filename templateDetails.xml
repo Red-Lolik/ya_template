@@ -7,7 +7,7 @@
 	<author>Alexey Andreev</author>
 	<authorEmail>redlolik@gmail.com</authorEmail>
 	<copyright>Copyright (C) 2013 All rights reserved.</copyright>
-	<description>TPL_PROTOSTAR_XML_DESCRIPTION</description>
+	<description>TPL_YA_XML_DESCRIPTION</description>
 	<files>
 		<filename>favicon.ico</filename>
 		<filename>index.php</filename>
@@ -18,6 +18,7 @@
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
+		<folder>language</folder>
 	</files>
 	<positions>
 		<position>menu-top</position>
@@ -26,4 +27,8 @@
 		<position>promo</position>
 		<position>seo</position>
 	</positions>
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_ya.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_ya.sys.ini</language>
+	</languages>
 </extension>

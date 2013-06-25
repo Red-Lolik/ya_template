@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="TPL_YA_COM_CONTENT_CATEGORY_VIEW_EMPTY_TITLE" option="TPL_YA_COM_CONTENT_CATEGORY_VIEW_EMPTY_OPTION">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_ARTICLE_CATEGORY_LIST"
+		/>
+		<message>
+			<![CDATA[TPL_YA_COM_CONTENT_CATEGORY_VIEW_EMPTY_DESC]]>
+		</message>
+	</layout>
+
+</metadata>
