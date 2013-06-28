@@ -67,13 +67,19 @@ foreach ($list as $i => &$item) :
 	// Render the menu item.
 	switch ($item->type) :
 		case 'url':
-			echo '<a class="gnb" href="'.$item->link.'">
-					<div class="top-menu-btn-left"></div>
-					<div class="top-menu-btn-middle">'.$item->title.'</div>
-					<div class="top-menu-btn-right"></div>
-				</a>';
+			echo "<a class='gnb' href='".$item->link."'>
+					<div class='top-menu-btn-left'></div>
+					<div class='top-menu-btn-middle'>".$item->title."</div>
+					<div class='top-menu-btn-right'></div>
+				</a>";
 			break;
 		case 'separator':
+			echo "<a class='gnb' href='#'>
+					<div class='top-menu-btn-left'></div>
+					<div class='top-menu-btn-middle'>".$item->title."</div>
+					<div class='top-menu-btn-right'></div>
+				</a>";
+			break;
 		case 'component':
 		case 'heading':
 			require JModuleHelper::getLayoutPath('mod_menu', 'default_'.$item->type);
