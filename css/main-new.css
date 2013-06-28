@@ -111,8 +111,6 @@ html {}
 		height: 70px;
 	}
 
-#article-Visual-flash {display:none;position:absolute;left:0;top:0;z-index:10;width:100%;}
-
 #wrap-flash {min-width:960px;}
 
 .wrap-menudock {position:relative;width:960px;margin:0 auto;}
@@ -138,7 +136,6 @@ html {}
 	/**zoom: 1;*/
 	clear: both;
 }
-/*.clearFloat:after {content:'';display:block;clear:both;height:0;visibility:hidden;}	Отключаю!	*/
 
 .fl-L {float:left;}
 .fl-R {float:right;}
