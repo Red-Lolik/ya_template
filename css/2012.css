@@ -10,16 +10,19 @@ body.events, body.events-archive {
 a {
 	color: #053476;
 }
-#article-Visual {
+.slider {
+	height: 450px;
+}
+.article-Visual {
 	position: relative;
 	width: 960px;
 	height: 450px;
 	margin: 0 auto;
 	display: block;
 }
-	#article-Visual h1,
-	.start .slide #article-Visual h2,
-	.offers .slide #article-Visual h2,
+	.article-Visual h1,
+	.start .slide .article-Visual h2,
+	.offers .slide .article-Visual h2,
 	.events h1,
 	.events-archive h1 {
 		line-height: 36px;
@@ -31,21 +34,21 @@ a {
 		width: 960px;
 		margin: 0px auto;
 	}
-	#article-Visual h2, .start .slide #article-Visual h3, .offers .slide #article-Visual h3 {
+	.article-Visual h2, .start .slide .article-Visual h3, .offers .slide .article-Visual h3 {
 		font-size: 24px;
 		padding: 20px 0px 5px 0px;
 		font-weight: normal;
 	}
-		#article-Visual #contacts .slide h2 {
+		.article-Visual #contacts .slide h2 {
 			padding: 80px 0px 0px 0px;
 			float: left;
 		}
-	#article-Visual h3 {
+	.article-Visual h3 {
 		font-size: 19px;
 		font-weight: normal;
 		margin: 10px 0px 10px 0px;
 	}
-	#article-Visual p {
+	.article-Visual p {
 		font-size: 13px;
 		margin: 20px 0px 0px 0px;
 	}
@@ -94,7 +97,7 @@ a {
 
 /* CONTACTS START */
 .contacts .contact-view #list {
-	background: url('/i/template/2012/contacts-list.png') no-repeat left 15px;
+	background: url('../images/contacts-list.png') no-repeat left 15px;
 	width: 39px;
 	height: 39px;
 	padding: 15px 0px 15px 0px;
@@ -107,7 +110,7 @@ a {
 .contacts #contacts {
 	float: left;
 }
-	.contacts #article-Visual .contact-list ul {
+	.contacts .article-Visual .contact-list ul {
 		font-size: 15px;
 		color: #003375;
 		list-style: none;
@@ -117,7 +120,7 @@ a {
 		-moz-box-shadow: 1px 0px 0px 0px #ffffff;
 		-webkit-box-shadow: 1px 0px 0px 0px #ffffff;
 	}
-		#article-Visual .contact-list li {
+		.article-Visual .contact-list li {
 			height: 17px;
 			width: 135px;
 		}
@@ -246,7 +249,7 @@ a {
 		z-index: 25;
 		top: 455px;
 	}
-	#article-Visual .vacancy .brands h3 {
+	.article-Visual .vacancy .brands h3 {
 		font-size: 19px;
 		float: left;
 		margin: 0px 10px 0px 0px;
@@ -509,13 +512,13 @@ a.rounded:active {
 	float: left;
 	width: 300px;
 }
-#article-Visual .tradein-info h1 {
+.article-Visual .tradein-info h1 {
 	padding: 0px 0px 0px 0px;
 }
-#article-Visual .tradein-info ul {
+.article-Visual .tradein-info ul {
 	margin: 0px 0px 0px 15px;
 }
-	#article-Visual .tradein-info li.desc {
+	.article-Visual .tradein-info li.desc {
 		margin: 10px 0px 0px 0px;
 		line-height: 18px;
 	}
@@ -527,13 +530,13 @@ a.rounded:active {
 		display: block;
 		float: left;
 	}
-#article-Visual ul.pics_preview {
+.article-Visual ul.pics_preview {
 	list-style: none outside none;
 	float: right;
 	margin: 40px 10px 0px 0px;
 	width: 75px;
 }
-	#article-Visual ul.pics_preview li {
+	.article-Visual ul.pics_preview li {
 		margin: 0px 0px 13px 0px;
 	}
 .tradein .pics_preview img {
@@ -666,15 +669,15 @@ a.rounded:active {
 	}
 /* Test-drive END */
 
-#article-Visual ul{
+.article-Visual ul{
 	margin: 10px 50px 0 30px;
 	list-style: disc;
 	font-size: 13px;
 }
-#article-Visual li{
+.article-Visual li{
 	margin: 10px 0 0;
 }
-#article-Visual .date {
+.article-Visual .date {
 	/*INFO Перенес в .events .slide .date (см.ниже) */
 }
 
@@ -715,12 +718,12 @@ a.rounded:active {
 /* Car selector END */
 
 /* Partneram START */
-#section-visual.start .visualImg_box,
+/*#section-visual.start .visualImg_box,
 #section-visual.events .visualImg_box .visualImg_box,
 #section-visual.events-archive .visualImg_box .visualImg_box,
 #section-visual.offers .visualImg_box {
 	display: none;
-}
+}*/
 /* Partneram END */
 
 /* Footer */
@@ -760,22 +763,18 @@ a.rounded:active {
 	border-top: 1px solid #8b8b8b;
 	border-bottom: 1px solid #8b8b8b;
 }
-#article-sitemap div.column {
+#article-sitemap div.column, #article-sitemap ul.menu li.parent {
 	float: left;
 	width: 25%;
 }
-#article-sitemap h2 {
+#article-sitemap span.separator {
 	color: #ffffff;
 	margin-bottom: 5px;
 	font-size: 11px;
 	font-weight: normal;
 	line-height: 16px;
-}
-#article-sitemap h2 a {
-	text-decoration: none;
-}
-#article-sitemap h2 a:hover {
-	text-decoration: underline;
+	display: block;
+	text-transform: uppercase;
 }
 #article-sitemap li {
 	font-size:11px;
