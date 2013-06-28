@@ -12,27 +12,37 @@
 defined('_JEXEC') or die;
 ?>
 <div class="<?php echo $moduleclass_sfx; ?>">
-	<h1><?php echo $module->title;?></h1>
+
+<?php if ($module->showtitle) : ?>
+	<h1><?php echo $module->title; ?></h1>
+<?php endif; ?>
+	
 	<div class="slider">
 	<?php foreach ($list as $item) : ?>
 
 		<div class="slide">
-			<div id="article-Visual">
-				
+			
+			<?php if (json_decode($item->images)->image_fulltext) : ?>
+				<div class="visualImg" style="background: url('<?php echo json_decode($item->images)->image_fulltext; ?>') no-repeat scroll center 0px transparent;"></div>
+			<?php endif; ?>
+			
+			<div class="article-Visual">
+
 				<?php if (json_decode($item->images)->image_intro) : ?>
 					<img class="big_img" src="/ya/<?php echo json_decode($item->images)->image_intro; /*FIXME При выводе на продакшн удалить сегмент ya в начале строки!!!*/?>">
 				<?php endif; ?>
-					
-				<h<?php echo $item_heading; ?>>
-					<?php if ($params->get('link_titles') == 1) : ?>
-						<a class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>">
-							<?php echo $item->title; ?>
-						</a>
-					<?php else :?>
-						<?php echo $item->title; ?>
+				<?php if (json_decode($item->attribs)->show_title != '0') : ?>
+					<h<?php echo $item_heading; ?>>
+						<?php if ($params->get('link_titles') == 1) : ?>
+							<a class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>">
+								<?php echo $item->title; ?>
 							</a>
-					<?php endif; ?>
-				</h<?php echo $item_heading; ?>>
+						<?php else :?>
+							<?php echo $item->title; ?>
+								</a>
+						<?php endif; ?>
+					</h<?php echo $item_heading; ?>>
+				<?php endif; ?>
 
 				<?php if ($item->displayDate) : ?>
 					<span class="mod-articles-category-date"><?php echo $item->displayDate; ?></span>
@@ -64,6 +74,11 @@ defined('_JEXEC') or die;
 					</span>
 				<?php endif; ?>
 			</div>
+
+			<?php if (json_decode($item->urls)->urla) : ?>
+				<a <?php if (json_decode($item->urls)->targeta) : echo "target='_blank' "; endif; ?>href="<?php echo json_decode($item->urls)->urla;?>" class="visualImg"></a>
+			<?php endif; ?>
+				
 		</div>
 	<?php endforeach; ?>
 	</div>
