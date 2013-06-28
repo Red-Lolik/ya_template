@@ -6,16 +6,17 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/common.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/2012.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/editor.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/main-new.css');
-$doc->addStyleSheet('http://yug-avto.ru/js/fancybox/jquery.fancybox-1.3.4.css');
+//$doc->addStyleSheet('http://yug-avto.ru/js/fancybox/jquery.fancybox-1.3.4.css');
 
 $doc->_scripts = NULL;
 JHtmlJquery::framework(false);
 //$doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js"); //TODO После релиза переключиться на внешнюю библиотеку
-$doc->addScript("http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js");
+//$doc->addScript("http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js");
+//$doc->addScript("http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js");
+//$doc->addScript("http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js");
+//$doc->addScript("http://yug-avto.ru/js/jquery.lazyload.min.js");
 $doc->addScript("templates/".$this->template."/js/js.js");
-$doc->addScript("http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js");
 
-//var_dump($doc);
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,9 +28,7 @@ $doc->addScript("http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js")
 	
 <link type="text/css" rel="stylesheet" href="/inc/datepicker.css" />
 
-<script type="text/javascript" language="Javascript" src="/js/jquery.lazyload.min.js"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 <link type="text/css" rel="stylesheet" href="/inc/css/sunny/jquery-ui-1.9.1.custom.css" />
 
 </head>
@@ -107,7 +106,7 @@ var yaParams = {/*Здесь параметры визита*/};
 <div class="promo-top"></div>
 <div class="promo">
 	<div id="side-banner">
-		<jdoc:include type="modules" name="promo" style="xhtml" /> 
+		<jdoc:include type="modules" name="promo" style="none" /> 
 	</div>
 </div>
 <div class="promo-shadow"></div>
@@ -139,7 +138,7 @@ var yaParams = {/*Здесь параметры визита*/};
 		<!--Sitemap-->
 		<div id="article-sitemap" class="clearFloat">
 			<div class="column">
-				<h2>АВТОМОБИЛИ</h2>
+				<span class="separator">АВТОМОБИЛИ</span>
 				<ul style="float: left; margin: 0px 70px 0px 0px;">
 					<li><a href="http://cadillac.yug-avto.ru" target="_blank">Cadillac</a></li>
 					<li><a href="http://chevrolet.yug-avto.ru" target="_blank">Chevrolet</a></li>
@@ -157,7 +156,7 @@ var yaParams = {/*Здесь параметры визита*/};
 					<li><a href="http://vw.yug-avto.ru" target="_blank">Volkswagen</a></li>
 				</ul>
 			</div>
-			<jdoc:include type="modules" name="menu-bottom" style="xhtml" />
+			<jdoc:include type="modules" name="menu-bottom" style="none" />
 		</div>
 		<!--//Sitemap-->
 
