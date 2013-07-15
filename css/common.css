@@ -96,7 +96,7 @@
 .wrap-header .brands div {
 	height: 49px;
 	float: left;
-	margin: 0px 28px 0px 0px;
+	margin: 0px 27px 0px 0px;
 }
 .contacts .slide .logo {
 	height: 49px;
@@ -135,8 +135,8 @@
 	width: 40px;
 }
 .wrap-header .brands #citroen, .contacts .slide#citroen .logo {
-	background: url('../images/brands_sprite.png') no-repeat scroll -578px 0px transparent;
-	width: 42px;
+	background: url('../images/brands_sprite.png') no-repeat scroll -570px 0px transparent;
+	width: 58px;
 }
 .wrap-header .brands #honda, .contacts .slide#honda .logo {
 	background: url('../images/brands_sprite.png') no-repeat scroll -649px 0px transparent;
