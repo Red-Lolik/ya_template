@@ -1,34 +1,60 @@
 <?php
-/* TODO Настроить выборки данных на живом хостинге с применением объектов Joomla
-$query = "SELECT id FROM ".$_tab_tradein." WHERE visible=1;";
-$result = @mysql_query($query);
-$TradeinCars = @mysql_num_rows($result);
+$db	= JFactory::getDbo();
+$query = $db->getQuery(true);
 
-//Цикл возвращается по 1 дню назад, пока не получит количество машин > 0
+/* Trade-in */
+$query->clear()
+	->select('COUNT(id)')
+	->from('all_tradein')
+	->where('visible = 1');
+$db->setQuery($query);
+$TradeinCars = $db->loadResult();
+
+/* В наличии */
 $stock_interval = 0;
-while ($Stock[0]==null || $Stock[0]==0) {
+while ($Stock==null || $Stock==0) {
 	$stock_interval++;
-	$stock_q = "SELECT SUM(stock) FROM $_tab_stat WHERE date=CURDATE()-INTERVAL $stock_interval DAY;";
-	$stock_r = @mysql_query($stock_q);
-	$Stock = @mysql_fetch_array($stock_r);
+	$query->clear()
+		->select('SUM(stock)')
+		->from('ya_statistics')
+		->where('date=CURDATE()-INTERVAL '.$stock_interval.' DAY');
+	$db->setQuery($query);
+	$Stock = $db->loadResult();
 }
 
-$sold_q = "SELECT SUM(sold) FROM ".$_tab_stat." WHERE MONTH(date) = MONTH(CURDATE())-1;";
-$sold_r = @mysql_query($sold_q);
-$Sold = @mysql_fetch_array($sold_r);
-*/
+/* Покупателей */
+$query->clear()
+	->select('SUM(sold)')
+	->from('ya_statistics')
+	->where('MONTH(date) = MONTH(CURDATE())-1');
+$db->setQuery($query);
+$Sold = $db->loadResult();
+$month_name = array(
+	1=>'январе',
+	2=>'феврале',
+	3=>'марте',
+	4=>'апреле',
+	5=>'мае',
+	6=>'июне',
+	7=>'июле',
+	8=>'августе',
+	9=>'сентябре',
+	10=>'октябре',
+	11=>'ноябре',
+	12=>'декабре'
+);
 ?>
 <ul>				
 	<a href='/car-selector/'>
 		<li>
-			<span class='number'>$Stock[0]</span>
+			<span class='number'><?php echo $Stock; ?></span>
 			<p>Новых автомобилей в наличии</p>
 		</li>
 	</a>
 	<a href='/car-selector/'>
 		<li>
-			<span class='number'>$Sold[0]</span>
-			<p>Счастливых покупателей в ".month_name4(date("n")-1)."</p>
+			<span class='number'><?php echo $Sold; ?></span>
+			<p>Счастливых покупателей в <?php echo $month_name[date("n")-1]; ?></p>
 		</li>
 	</a>
 	<a href='/car-selector/'>
@@ -39,7 +65,7 @@ $Sold = @mysql_fetch_array($sold_r);
 	</a>
 	<a href='/tradein/'>
 		<li>
-			<span class='number'>$TradeinCars</span>
+			<span class='number'><?php echo $TradeinCars;?></span>
 			<p>Автомобилей с пробегом</p>
 		</li>
 	</a>
