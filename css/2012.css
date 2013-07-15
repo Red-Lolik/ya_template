@@ -9,6 +9,7 @@ body.events, body.events-archive {
 }
 a {
 	color: #053476;
+	outline: none;
 }
 .slider {
 	height: 450px;
@@ -426,8 +427,8 @@ a.rounded:active {
 	width: 69px;
 }
 .vacancy-item .brand_logo.citroen {
-	background: url('/i/template/2012/brands_sprite.png') no-repeat scroll -578px 0px transparent;
-	width: 42px;
+	background: url('/i/template/2012/brands_sprite.png') no-repeat scroll -570px 0px transparent;
+	width: 58px;
 }
 .vacancy-item .brand_logo.hnd {
 	background: url('/i/template/2012/brands_sprite.png') no-repeat scroll -649px 0px transparent;
