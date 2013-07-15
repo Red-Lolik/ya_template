@@ -11,11 +11,11 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
-<div class="<?php echo $moduleclass_sfx; ?>">
+<!-- <div class="<?php echo $moduleclass_sfx; ?>">-->
 
-<?php if ($module->showtitle) : ?>
+<?php /* if ($module->showtitle) : ?>
 	<h1><?php echo $module->title; ?></h1>
-<?php endif; ?>
+<?php endif; */ ?>
 	
 	<div class="slider">
 	<?php foreach ($list as $item) : ?>
@@ -29,7 +29,7 @@ defined('_JEXEC') or die;
 			<div class="article-Visual">
 
 				<?php if (json_decode($item->images)->image_intro) : ?>
-					<img class="big_img" src="/ya/<?php echo json_decode($item->images)->image_intro; /*FIXME При выводе на продакшн удалить сегмент ya в начале строки!!!*/?>">
+					<img class="big_img" src="<?php echo json_decode($item->images)->image_intro; ?>">
 				<?php endif; ?>
 				<?php if (json_decode($item->attribs)->show_title != '0') : ?>
 					<h<?php echo $item_heading; ?>>
@@ -82,4 +82,4 @@ defined('_JEXEC') or die;
 		</div>
 	<?php endforeach; ?>
 	</div>
-</div>
+<!-- </div> -->
