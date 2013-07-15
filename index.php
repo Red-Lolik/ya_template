@@ -2,19 +2,22 @@
 $doc = JFactory::getDocument();
 $doc->_generator = NULL;
 //$doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/common.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/2012.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/editor.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/main-new.css');
+$doc->addStyleSheet("templates/".$this->template."/css/common.css");
+$doc->addStyleSheet("templates/".$this->template."/css/2012.css");
+$doc->addStyleSheet("templates/".$this->template."/css/editor.css");
+$doc->addStyleSheet("templates/".$this->template."/css/main-new.css");
 //$doc->addStyleSheet('http://yug-avto.ru/js/fancybox/jquery.fancybox-1.3.4.css');
+$doc->addStyleSheet("http://yandex.st/jquery/fancybox/2.1.4/jquery.fancybox.min.css");
 
 $doc->_scripts = NULL;
-JHtmlJquery::framework(false);
-//$doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js"); //TODO После релиза переключиться на внешнюю библиотеку
-//$doc->addScript("http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js");
+$doc->_script = array();
+//JHtmlJquery::framework(false);
+$doc->addScript("http://yandex.st/jquery/1.8.0/jquery.min.js");
+$doc->addScript("http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js");
 //$doc->addScript("http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js");
-//$doc->addScript("http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js");
-//$doc->addScript("http://yug-avto.ru/js/jquery.lazyload.min.js");
+$doc->addScript("http://yandex.st/jquery/fancybox/2.1.4/jquery.fancybox.min.js");
+$doc->addScript("http://yug-avto.ru/js/jquery-cycle/jquery.cycle.all.js");
+$doc->addScript("http://yug-avto.ru/js/jquery.lazyload.min.js");
 $doc->addScript("templates/".$this->template."/js/js.js");
 
 ?>
@@ -99,7 +102,7 @@ var yaParams = {/*Здесь параметры визита*/};
 
 </div>
 
-<jdoc:include type="modules" name="slider" style="none" /> 
+<jdoc:include type="modules" name="slider" style="html5" /> 
 
 <div id="section-visual" class="">
 
