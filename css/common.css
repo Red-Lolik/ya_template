@@ -31,7 +31,6 @@
 		line-height: 37px;
 		text-decoration: underline;
 	}
-
 #nav-GNB a.on {
 	margin: 0px -2px 0px -2px;
 	color: #000000;
@@ -40,7 +39,6 @@
 	-moz-box-shadow: 0 4px 0 0 #FFFFFF, 0 0 4px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 4px 0 0 #FFFFFF, 0 0 4px rgba(0, 0, 0, 0.2);
 }
-	
 	a.on div.top-menu-btn-left {
 		background: url('../images/top-menu-btn-left.png') no-repeat scroll 0px 0px #ffffff;
 		width: 21px;
@@ -53,7 +51,6 @@
 		background: url('../images/top-menu-btn-right.png') no-repeat scroll 0px 0px #ffffff;
 		width: 22px;
 	}
-
 #nav-GNB .snb {
 	display: none;
 	z-index: 200;
@@ -90,6 +87,7 @@
 #nav-GNB .snb a:hover {color:#0f5699;}
 /*MENU-TOP END*/
 
+/* Top logos */
 .wrap-header .brands {
 	padding: 130px 0px 0px 0px;
 }
