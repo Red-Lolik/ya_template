@@ -29,10 +29,10 @@ $doc->addScript("templates/".$this->template."/js/js.js");
 	<meta name='keywords' content=""/>
 	<meta name='description' content=""/>
 	
-<link type="text/css" rel="stylesheet" href="/inc/datepicker.css" />
+<link type="text/css" rel="stylesheet" href="http://yug-avto.ru/inc/datepicker.css" />
 
 
-<link type="text/css" rel="stylesheet" href="/inc/css/sunny/jquery-ui-1.9.1.custom.css" />
+<link type="text/css" rel="stylesheet" href="http://yug-avto.ru/inc/css/sunny/jquery-ui-1.9.1.custom.css" />
 
 </head>
 <body>
@@ -126,8 +126,8 @@ var yaParams = {/*Здесь параметры визита*/};
 			<div class='SocialShareBtns'>
 				<noindex>
 					<a href="http://www.facebook.com/sharer/sharer.php?u=http://yug-avto.ru/&amp;t=Группа компаний Юг-Авто – новые автомобили в Краснодаре, покупка/продажа, автосалоны." target='_blank' onClick="popupWin = window.open(this.href, 'Facebook Share', 'location,width=640,height=370,top=200,left=200'); popupWin.focus(); return false;"><img alt='' src='<?php echo $doc->baseurl;?>/templates/ya/images/24fb.png' /></a>
-					<a href='http://twitter.com/share?url=http://yug-avto.ru/&amp;text=%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0+%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9+%D0%AE%D0%B3-%D0%90%D0%B2%D1%82%D0%BE+%E2%80%93+%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5+%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8+%D0%B2+%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D0%B5%2C+%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B0%2F%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%2C+%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%D1%8B.&amp;via=yugavto&amp;related=yugavto' target='_blank' onClick=\"popupWin = window.open(this.href, 'Tweet', 'location,width=550,height=250,top=200,left=300'); popupWin.focus(); return false;\"><img src='<?php echo $doc->baseurl;?>/templates/ya/images/24tw.png' alt=''/></a>
-					<a href="http://vkontakte.ru/share.php?url=http://yug-avto.ru/" target='_blank' onClick=\"popupWin = window.open(this.href, 'Vkontakte Поделиться', 'location,width=550,height=400,top=200,left=300'); popupWin.focus(); return false;\"><img src='<?php echo $doc->baseurl;?>/templates/ya/images/24vk.png' alt='' /></a>
+					<a href="http://twitter.com/share?url=http://yug-avto.ru/&amp;text=%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0+%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9+%D0%AE%D0%B3-%D0%90%D0%B2%D1%82%D0%BE+%E2%80%93+%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5+%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8+%D0%B2+%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D0%B5%2C+%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B0%2F%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%2C+%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%D1%8B.&amp;via=yugavto&amp;related=yugavto" target="_blank" onClick="popupWin = window.open(this.href, 'Tweet', 'location,width=550,height=250,top=200,left=300'); popupWin.focus(); return false;"><img src='<?php echo $doc->baseurl;?>/templates/ya/images/24tw.png' alt=''/></a>
+					<a href="http://vkontakte.ru/share.php?url=http://yug-avto.ru/" target="_blank" onClick="popupWin = window.open(this.href, 'Vkontakte Поделиться', 'location,width=550,height=400,top=200,left=300'); popupWin.focus(); return false;"><img src='<?php echo $doc->baseurl;?>/templates/ya/images/24vk.png' alt='' /></a>
 				</noindex>
 			</div>
 			<p>Мы в социальных сетях: 
